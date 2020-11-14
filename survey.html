@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="survey.css">
+	<meta name="viewport" content="width=device-width inital-scale=1 maximum-scale=1.0 user-scalable=0">
+	<title></title>
+</head>
+<body>
+	<div id="header">
+		<h1 id="title">Library Survey Form</h1>
+		<p id="description">Please help us improve your library</p>
+	</div>
+	<div id="formcontainer">
+	<form id="survey-form" action="" method="POST">
+
+		<label for="name" id="name-label">Name:</label>
+		<input id="name" type="text" name="name" placeholder="name" required>
+		<label for="email" id="email-label">Email:</label>
+		<input id="email" type="email" name="email" placeholder="email" required>
+		<label for="number" id="number-label">How often do you visit the library a month?:</label>
+		<input id="number" type="number" name="monthlyvisits" placeholder="monthly visits" min="0" max="30">
+		<label for="recommend">Would you recommend the library to your neighbors?</label>
+		<select type="select"  id="dropdown" name="recommend">
+			<option value="yes">Yes</option>
+			<option value="no">No</option>
+			<option value="maybe">Maybe</option>
+		</select>	
+		<br><br>
+		<label for="use">What do you mainly visit the library for?</label>
+		
+		<label for="books-media">
+			<input type="radio" name="use" value="books-and-media">Books and Media</label>
+		<label for="study-rooms">
+			<input type="radio" name="use" value="study-rooms">Study Rooms</label>
+		<label for="computers">
+			<input type="radio" name="use" value="computers">Computers</label>
+		<label for="other">
+			<input type="radio" name="use" value="other">Other</label>
+
+		<label for="materials">What areas do you checkout materials from?</label>
+		<label for="childrens">
+			<input type="checkbox" name="materials" value="Children's">Children's books</label>
+		<label for="fiction">
+			<input type="checkbox" name="materials" value="AdultFiction">Adult Fiction</label>
+		<label for="nonfiction">
+			<input type="checkbox" name="materials" value="NonFiction">Adult Non-fiction</label>
+		<label for="graphicnovels">
+			<input type="checkbox" name="materials" value="graphicnovels">Graphic Novels</label>
+		<label for="media">
+			<input type="checkbox" name="materials" value="media">DVDs and media</label>
+		<label for="nontraditional">
+			<input type="checkbox" name="materials" value="nontraditional">Nontraditional items</label>
+<br>
+		<label for="additional">Do you have any recommendations or requests?</label>
+		<textarea rows="10" column="30" name="additional"></textarea>
+		<label for="submit">
+			<button id="submit">Submit</button>
+		</label>
+	</form>	
+	</div>
+</body>
+
+</html>

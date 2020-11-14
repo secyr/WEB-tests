@@ -1,0 +1,54 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Baskerville, Akzidenz Grotesk, Gotham, Helvetica, sans-serif;
+	font-size: 1em;
+	background-image: url("images/library.jpg");
+}
+
+#header {
+	text-align: center;
+	border: 1px solid black;
+    background-color: white;
+	width: 66%;
+	max-width: 800px;
+	margin: 20px auto;
+}
+
+p {
+	height: 2em;
+	margin: 3em;
+	font-family: ;
+}
+
+#number, #email, #name {
+	width: 40%;
+}
+
+#formcontainer {
+	display: block;
+	width: 66%;
+	max-width: 800px;
+	border: 1px solid black;
+	padding: 15px;
+	margin: auto;
+	background: white;
+
+}
+
+label {
+	display: block;
+	margin: 0 0 8px 0;
+
+}
+
+input, select {
+	border-radius: 3px;
+	margin: 0 0 8px 0;
+}
+
+textarea {
+	width: 85%;
+}

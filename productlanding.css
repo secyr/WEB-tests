@@ -1,0 +1,108 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Lato, "Century Gothic", sans-serif;
+	font-size: 1em;
+}
+/** contains navlinks, image, and main header **/
+#header {
+	width: 100%;
+	background-image: linear-gradient(-45deg, #e06c6c,#e0a86c,#dee06c,#6ce0b5,#6cc7e0,#6c91e0,#936ce0);
+	border: 1px solid black;
+	display: flex;
+	align-items: center; 
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+nav > ul {
+	display: flex;
+	flex-direction: row; 
+	margin: 0 10px;
+	list-style-type: none;
+	position: relative;
+	left: 220%;
+}
+
+#nav-bar {
+	position: fixed;
+
+}
+
+a, a:visited {
+	padding: 0 5px 0 5px;
+	text-decoration: none;
+}
+
+#header > img {
+	height: 100px;
+	width: 100px;
+	padding: 5px;
+}
+/* Start of page */
+
+#headlinecontainer {
+	height: 200px;
+	margin-top: 75px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+input {
+	margin: 0 0 3px 0;
+}
+
+#submit {
+	display: block;
+	width: 100%;
+	max-width: 150px;
+	border: solid black 1px;
+}
+
+.mailbtn {
+	color: white;
+	background-color: #00802b;
+	font-family: "Open Sans",;
+	text-transform: uppercase;
+	}
+
+#content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+}
+
+img {
+	width: 300px;
+	height: 300px;
+}
+
+#about, #selection {
+	margin-top: 25px;
+	justify-content: center;
+}
+
+ol {
+	list-style: none;
+}
+
+
+@media (max-width: 761px) {
+
+#header {
+	position: relative;
+	width: 100%;
+	background-image: linear-gradient(-45deg, #e06c6c,#e0a86c,#dee06c,#6ce0b5,#6cc7e0,#6c91e0,#936ce0);
+	border: 1px solid black;
+	display: flex;
+	align-items: center; 
+	top: 0px;
+	left: 0px;
+}
+}
